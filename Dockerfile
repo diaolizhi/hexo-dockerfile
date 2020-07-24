@@ -13,7 +13,7 @@ RUN curl -sL https://rpm.nodesource.com/setup_10.x | bash -
 RUN yum install -y nodejs
 
 WORKDIR /root
-RUN git clone git@github.com:diaolizhi/diaolizhi.github.io.git
+RUN git clone https://github.com/diaolizhi/diaolizhi.github.io.git
 
 WORKDIR /root/diaolizhi.github.io
 RUN git checkout --track origin/blog
